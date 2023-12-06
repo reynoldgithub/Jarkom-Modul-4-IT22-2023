@@ -1,5 +1,10 @@
 # Jarkom-Modul-4-IT22-2023
 
+## Anggota Kelompok:
+## IT 22
+-   Reynold Putra Merdeka | 5027211034
+-   Rakha Aldo Nirwasita  | 5027211054
+
 
 ## VLSM
 

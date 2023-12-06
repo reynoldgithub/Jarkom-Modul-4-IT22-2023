@@ -1,6 +1,8 @@
 # Jarkom-Modul-4-IT22-2023
 
 
+## VLSM
+
 1. Membuat rute grup subnett
   ![image](https://github.com/reynoldgithub/Jarkom-Modul-4-IT22-2023/assets/104211684/b26d049a-b7d7-447e-9b9a-3f54a01418e1)
 

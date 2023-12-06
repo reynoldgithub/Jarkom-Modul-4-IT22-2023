@@ -1,0 +1,91 @@
+!
+version 12.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 192.244.24.2 255.255.255.192
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 192.244.16.1 255.255.252.0
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+ip route 192.244.0.0 255.255.248.0 192.244.24.1 
+ip route 192.244.8.0 255.255.252.0 192.244.24.1 
+ip route 192.244.12.0 255.255.252.0 192.244.24.1 
+ip route 192.244.20.0 255.255.254.0 192.244.24.1 
+ip route 192.244.22.0 255.255.255.0 192.244.24.1 
+ip route 192.244.23.0 255.255.255.0 192.244.24.1 
+ip route 192.244.24.64 255.255.255.224 192.244.24.1 
+ip route 192.244.24.96 255.255.255.248 192.244.24.1 
+ip route 192.244.24.104 255.255.255.248 192.244.24.1 
+ip route 192.244.24.112 255.255.255.252 192.244.24.1 
+ip route 192.244.24.116 255.255.255.252 192.244.24.1 
+ip route 192.244.24.120 255.255.255.252 192.244.24.1 
+ip route 192.244.24.124 255.255.255.252 192.244.24.1 
+ip route 192.244.24.128 255.255.255.252 192.244.24.1 
+ip route 192.244.24.132 255.255.255.252 192.244.24.1 
+ip route 192.244.24.136 255.255.255.252 192.244.24.1 
+ip route 192.244.24.140 255.255.255.252 192.244.24.1 
+ip route 192.244.24.144 255.255.255.252 192.244.24.1 
+ip route 192.244.24.148 255.255.255.252 192.244.24.1 
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
